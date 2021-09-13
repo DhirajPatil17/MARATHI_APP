@@ -1,6 +1,8 @@
 package com.example.languageapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,12 +10,20 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.tabs.TabLayout;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ViewPager viewPager=(ViewPager)findViewById(R.id.pager);
+        FragmentAdapter adapter=new FragmentAdapter(this,getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
+        TabLayout tab=(TabLayout)findViewById(R.id.tabs);
+        tab.setupWithViewPager(viewPager);
+
         TextView Txt1 = (TextView) findViewById(R.id.colors);
         Txt1.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -9,22 +9,27 @@
 
     tools:context=".MainActivity">
 
-
-
-
-        <TextView
-            android:id="@+id/colors"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:background="@color/colorsactivity"
-            android:text="@string/Colors"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:layout_marginBottom="10dp"
-            android:textStyle="bold"
-           />
+<com.google.android.material.tabs.TabLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tabs"/>
+<androidx.viewpager.widget.ViewPager
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/colorsactivity"
+        android:text="@string/Colors"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        />
 
 
     <TextView
@@ -39,7 +44,6 @@
         android:textSize="25dp"
         android:layout_marginBottom="10dp"
         android:textStyle="bold"/>
-<!--          android:onClick="numbersActivity"/>-->
 
 
     <TextView
@@ -54,7 +58,7 @@
         android:background="@color/familyactivity"
         android:textSize="25dp"
         android:textStyle="bold"/>
-<!--            android:onClick="familyActivity"/>-->
+
 
 
     <TextView
@@ -68,7 +72,11 @@
         android:background="@color/phrasesactivity"
         android:textSize="25dp"
         android:textStyle="bold"/>
-<!--            android:onClick="phrasesActivity"/>-->
+
+
+</androidx.viewpager.widget.ViewPager>
+
+
 
 
 </LinearLayout>

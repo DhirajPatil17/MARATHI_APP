@@ -4,4 +4,7 @@
     <string name="numbers">NUMBERS</string>
     <string name="family">FAMILY</string>
     <string name="phrases">PHRASES</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

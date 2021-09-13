@@ -9,10 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LanguageApp">
-        <activity android:name=".phrasesActivity" android:label="PHRASESACTIVITY"/>
-        <activity android:name=".numbersActivity" android:label="NUMBERSACTIVITY"/>
-        <activity android:name=".familyAcitvity" android:label="FAMILYACTIVITY"/>
-        <activity android:name=".colorsAcitvity" android:label="COLORSACTIVITY"/>
+        <activity android:name=".phrasesActivity"
+            android:label="PHRASESACTIVITY"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".numbersActivity"
+            android:label="NUMBERSACTIVITY"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".familyAcitvity"
+            android:label="FAMILYACTIVITY"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".colorsAcitvity"
+            android:label="COLORSACTIVITY"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
